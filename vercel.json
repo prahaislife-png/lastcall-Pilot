@@ -1,13 +1,53 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/privacy",
+      "destination": "/customer-privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/customer-terms",
+      "permanent": true
+    },
+    {
+      "source": "/delete-account",
+      "destination": "/account-deletion",
+      "permanent": true
+    },
+    {
+      "source": "/customer-account-deletion",
+      "destination": "/account-deletion",
+      "permanent": true
+    },
+    {
+      "source": "/restaurant-account-deletion",
+      "destination": "/account-deletion",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     }
   ]

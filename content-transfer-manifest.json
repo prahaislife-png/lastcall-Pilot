@@ -1,0 +1,37 @@
+[
+  {
+    "source": "1.docx",
+    "output": "restaurant-privacy.html",
+    "route": "/restaurant-privacy",
+    "source_blocks": 132,
+    "transfer_validation": "passed"
+  },
+  {
+    "source": "2.docx",
+    "output": "restaurant-terms.html",
+    "route": "/restaurant-terms",
+    "source_blocks": 132,
+    "transfer_validation": "passed"
+  },
+  {
+    "source": "3.docx",
+    "output": "account-deletion.html",
+    "route": "/account-deletion",
+    "source_blocks": 33,
+    "transfer_validation": "passed"
+  },
+  {
+    "source": "4.docx",
+    "output": "customer-privacy.html",
+    "route": "/customer-privacy",
+    "source_blocks": 128,
+    "transfer_validation": "passed"
+  },
+  {
+    "source": "5.docx",
+    "output": "customer-terms.html",
+    "route": "/customer-terms",
+    "source_blocks": 85,
+    "transfer_validation": "passed"
+  }
+]

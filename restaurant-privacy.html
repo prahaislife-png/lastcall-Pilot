@@ -1,288 +1,415 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Terms & Conditions &mdash; LastCall Customer India</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — LastCall Restaurant India</title>
+  <meta name="description" content="Privacy Policy for the LastCall Restaurant Partner Application in India.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#E23744">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23E23744'/><text x='50' y='68' font-family='Arial' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>LC</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
   :root {
     --bg: #FAFAF9;
     --surface: #FFFFFF;
+    --surface-soft: #FFFDF9;
     --border: #E7E5E4;
     --text: #1C1917;
     --text-muted: #57534E;
     --text-dim: #A8A29E;
-    --accent: #F97316;
-    --accent-light: #FFF7ED;
+    --accent: #E23744;
+    --accent-dark: #C42D3A;
+    --accent-light: #FFF1F2;
+    --shadow: 0 18px 50px rgba(28, 25, 23, 0.06);
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
+    margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: 'DM Sans', system-ui, sans-serif;
-    line-height: 1.7;
+    font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.72;
     -webkit-font-smoothing: antialiased;
   }
-  .header {
-    background: var(--surface);
+  a { color: var(--accent); }
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(255,255,255,.94);
+    backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
-    padding: 20px 24px;
+  }
+  .header-inner {
+    max-width: 1120px;
+    min-height: 70px;
+    padding: 14px 24px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 12px;
   }
+  .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; color: var(--text); }
   .logo {
-    width: 36px; height: 36px;
-    background: var(--accent);
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    color: #fff; font-weight: 700; font-size: 14px;
+    width: 38px; height: 38px; border-radius: 11px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--accent); color: white; font-weight: 800; font-size: 14px;
+    box-shadow: 0 6px 18px rgba(226,55,68,.22);
   }
-  .logo-text { font-weight: 700; font-size: 18px; color: var(--text); }
-  .logo-text span { color: var(--accent); }
-  .badge {
+  .brand-name { font-weight: 800; font-size: 19px; letter-spacing: -.35px; }
+  .brand-name span { color: var(--accent); }
+  .page-badge {
     margin-left: auto;
+    border: 1px solid #FECDD3;
     background: var(--accent-light);
-    color: var(--accent);
+    color: var(--accent-dark);
+    border-radius: 999px;
+    padding: 5px 12px;
     font-size: 12px;
-    font-weight: 600;
-    padding: 4px 12px;
-    border-radius: 100px;
-    letter-spacing: 0.5px;
-  }
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 48px 24px 80px;
-  }
-  h1 {
-    font-size: 28px;
     font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 8px;
+    letter-spacing: .02em;
   }
-  .subtitle {
+  .page-shell { max-width: 1120px; margin: 0 auto; padding: 34px 24px 80px; }
+  .legal-nav {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-bottom: 20px;
+  }
+  .legal-nav a {
+    text-decoration: none;
     color: var(--text-muted);
-    font-size: 15px;
-    margin-bottom: 12px;
-  }
-  .effective {
-    display: inline-block;
-    background: var(--accent-light);
-    color: var(--accent);
-    font-size: 13px;
-    font-weight: 600;
-    padding: 4px 12px;
-    border-radius: 6px;
-    margin-bottom: 40px;
-  }
-  h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 40px;
-    margin-bottom: 12px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-  }
-  h2:first-of-type { border-top: none; padding-top: 0; }
-  p { color: var(--text-muted); font-size: 15px; margin-bottom: 16px; }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 16px;
-  }
-  ul li {
-    position: relative;
-    padding: 10px 0 10px 20px;
-    font-size: 15px;
-    color: var(--text-muted);
-    border-bottom: 1px solid #F5F5F4;
-  }
-  ul li:last-child { border-bottom: none; }
-  ul li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 18px;
-    width: 8px; height: 8px;
-    background: var(--accent);
-    border-radius: 50%;
-  }
-  ul li strong { color: var(--text); font-weight: 600; }
-  .contact-box {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin-top: 16px;
-  }
-  .contact-box a {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .contact-box a:hover { text-decoration: underline; }
-  .footer {
-    text-align: center;
-    padding: 32px 24px;
-    font-size: 13px;
-    color: var(--text-dim);
-    border-top: 1px solid var(--border);
-  }
-  .footer a { color: var(--accent); text-decoration: none; }
-  .footer a:hover { text-decoration: underline; }
-
-
-  h3 {
-    font-size: 16px;
+    border-radius: 999px;
+    padding: 8px 12px;
+    font-size: 12px;
     font-weight: 700;
-    margin-top: 26px;
-    margin-bottom: 10px;
-    color: var(--text);
+    transition: .18s ease;
   }
-  p strong { color: var(--text); font-weight: 600; }
-  p a, li a { color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }
-  p a:hover, li a:hover { text-decoration: underline; }
-  .notice {
+  .legal-nav a:hover { color: var(--text); border-color: #D6D3D1; transform: translateY(-1px); }
+  .legal-nav a.active { color: #fff; background: var(--accent); border-color: var(--accent); }
+  .legal-card {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    padding: 48px 54px 58px;
+  }
+  .document-title {
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.2;
+    letter-spacing: -.035em;
+    margin: 0 0 10px;
+  }
+  .document-subtitle { color: var(--text-muted); font-size: 14px; margin: 0 0 12px; }
+  .date-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 34px; }
+  .date-chip {
+    display: inline-flex;
     background: var(--accent-light);
-    border-left: 4px solid var(--accent);
+    color: var(--accent-dark);
+    border: 1px solid #FECDD3;
     border-radius: 8px;
-    padding: 16px 18px;
-    color: var(--text);
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.01em;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
   }
-  @media (max-width: 640px) {
-    .header { padding: 16px; }
-    .badge { font-size: 11px; padding: 4px 9px; }
-    .container { padding: 34px 18px 64px; }
-    h1 { font-size: 25px; }
-    h2 { font-size: 19px; }
+  #document-content h2 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin: 42px 0 13px;
+    padding-top: 26px;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 90px;
+  }
+  #document-content h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+  #document-content h3 {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 27px 0 9px;
+    scroll-margin-top: 90px;
+  }
+  #document-content p { color: var(--text-muted); font-size: 15px; margin: 0 0 16px; }
+  #document-content p strong, #document-content li strong { color: var(--text); }
+  #document-content ul, #document-content ol { padding-left: 0; margin: 0 0 18px; }
+  #document-content ul { list-style: none; }
+  #document-content ol { padding-left: 28px; }
+  #document-content li {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin: 0;
+    padding: 9px 0 9px 22px;
+    border-bottom: 1px solid #F5F5F4;
+    position: relative;
+  }
+  #document-content ol li { padding-left: 5px; }
+  #document-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 19px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  #document-content li:last-child { border-bottom: 0; }
+  #document-content a { color: var(--accent-dark); font-weight: 600; overflow-wrap: anywhere; text-underline-offset: 3px; }
+  .notice {
+    color: var(--text) !important;
+    background: var(--accent-light);
+    border: 1px solid #FECDD3;
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 17px 18px;
+    font-size: 14px !important;
+    font-weight: 700;
+    letter-spacing: .01em;
+    margin: 20px 0 24px !important;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 4px 0 24px;
+  }
+  .info-grid p {
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    padding: 13px 14px;
+    margin: 0 !important;
+    font-size: 13px !important;
+    color: var(--text) !important;
+  }
+  .table-wrap { overflow-x: auto; margin: 12px 0 28px; border: 1px solid var(--border); border-radius: 12px; }
+  table { width: 100%; border-collapse: collapse; min-width: 620px; }
+  th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px; vertical-align: top; }
+  th { background: #F5F5F4; color: var(--text); font-weight: 700; }
+  td { color: var(--text-muted); }
+  tr:last-child td { border-bottom: 0; }
+  .source-footer-note {
+    color: var(--text-dim) !important;
+    font-size: 12px !important;
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+    margin-top: 32px !important;
+  }
+  .site-footer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 26px 24px 42px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+  }
+  .site-footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px 16px; margin-bottom: 10px; }
+  .site-footer a { color: var(--text-muted); text-decoration: none; }
+  .site-footer a:hover { color: var(--text); }
+  @media (max-width: 720px) {
+    .header-inner { padding: 12px 16px; min-height: 62px; }
+    .page-badge { font-size: 10px; padding: 4px 9px; }
+    .page-shell { padding: 22px 12px 56px; }
+    .legal-nav { gap: 6px; margin: 0 4px 14px; }
+    .legal-nav a { font-size: 11px; padding: 7px 10px; }
+    .legal-card { border-radius: 16px; padding: 32px 20px 42px; }
+    .info-grid { grid-template-columns: 1fr; }
+    #document-content h2 { font-size: 19px; }
   }
   @media print {
-    .header, .footer { display: none; }
-    .container { max-width: none; padding: 0; }
-    h2, h3 { break-after: avoid; }
-    p, li { orphans: 3; widows: 3; }
+    body { background: #fff; }
+    .site-header, .legal-nav, .site-footer { display: none; }
+    .page-shell { max-width: none; padding: 0; }
+    .legal-card { max-width: none; border: 0; border-radius: 0; box-shadow: none; padding: 0; }
     a { color: inherit !important; text-decoration: none !important; }
+    h2, h3 { break-after: avoid; }
+    p, li, tr { break-inside: avoid; }
   }
 </style>
 </head>
 <body>
-<div class="header">
-<div class="logo">LC</div>
-<div class="logo-text">Last<span>Call</span></div>
-<div class="badge">Customer Terms</div>
-</div>
-<div class="container"><h1>Terms & Conditions</h1><div class="subtitle">LastCall &mdash; Customer Agreement (India) &middot; Version 1.0 &middot; Last Updated: 18/07/2026</div><div class="effective">Effective Date: 18/07/2026</div><p>These Terms & Conditions (the &ldquo;<strong>Terms</strong>&rdquo;) constitute a legally binding agreement between LastCall Technologies IN, a company incorporated under the laws of India / Kozhikode, Kerala with its registered office at Kozhikode, Kerala (&ldquo;<strong>LastCall</strong>&rdquo;, the &ldquo;<strong>Company</strong>&rdquo;, &ldquo;<strong>we</strong>&rdquo;, &ldquo;<strong>us</strong>&rdquo;, &ldquo;<strong>our</strong>&rdquo;), and you, the individual who registers for and uses the <strong>LastCall customer application</strong> (also branded &ldquo;LastBite&rdquo;) (the &ldquo;<strong>App</strong>&rdquo;) and the associated LastCall marketplace platform (together, the &ldquo;<strong>Platform</strong>&rdquo; or the &ldquo;<strong>Services</strong>&rdquo;) (&ldquo;<strong>Customer</strong>&rdquo;, &ldquo;<strong>you</strong>&rdquo;, &ldquo;<strong>your</strong>&rdquo;).</p>
-<p>These Terms are an electronic record under the Information Technology Act, 2000 and rules thereunder and do not require physical or digital signatures. They are published in accordance with Rule 3(1) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 and the Consumer Protection (E-Commerce) Rules, 2020. The Privacy Policy available in the App and at <a href="https://lastcall.co.in/privacy" rel="noopener noreferrer">https://lastcall.co.in/privacy</a> is incorporated into these Terms by reference.</p>
-<p class="notice"><strong>BY TAPPING &ldquo;AGREE&rdquo;, REGISTERING AN ACCOUNT, OR ACCESSING OR USING THE SERVICES, YOU ACCEPT AND AGREE TO BE BOUND BY THESE TERMS. IF YOU DO NOT AGREE, YOU MUST NOT USE THE SERVICES.</strong></p>
-<h2>1. Definitions and Interpretation</h2>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="LastCall home">
+        <span class="logo">LC</span>
+        <span class="brand-name">Last<span>Call</span></span>
+      </a>
+      <span class="page-badge">Restaurant Privacy</span>
+    </div>
+  </header>
+  <main class="page-shell">
+    <nav class="legal-nav" aria-label="Legal documents">
+      <a class="" href="/customer-privacy">Customer Privacy</a>
+<a class="" href="/customer-terms">Customer Terms</a>
+<a class="" href="/account-deletion">Account Deletion</a>
+<a class="active" href="/restaurant-privacy" aria-current="page">Restaurant Privacy</a>
+<a class="" href="/restaurant-terms">Restaurant Terms</a>
+    </nav>
+    <article class="legal-card">
+      <div id="document-content">
+        <h1 class="document-title source-block" data-source-seq="1"><strong>PRIVACY POLICY</strong></h1>
+<p class="document-subtitle source-block" data-source-seq="2"><em>LastCall</em><em> Restaurant — Partner Application (India) | Version 1.0 | Effective Date: </em><em>27/02/2026</em><em> | Last Updated: </em><em>27/02/2026</em></p>
+<div class="date-row"><span class="date-chip">Effective Date: 27/02/2026</span><span class="date-chip">Last Updated: 27/02/2026</span></div>
+<p class="source-block" data-source-seq="3">This Privacy Policy ("<strong>Policy</strong>") is published by <strong>LastCall Technologies IN</strong>, a company incorporated under the laws of India / Kozhikode, Kerala, having its registered office at Kozhikode, Kerala (hereinafter referred to as "<strong>LastCall</strong>", the "<strong>Company</strong>", "<strong>we</strong>", "<strong>us</strong>" or "<strong>our</strong>"), and governs the collection, use, storage, processing, disclosure, transfer and protection of information in connection with the <strong>LastCall</strong><strong> Restaurant</strong> mobile application (the "<strong>Partner App</strong>"), the LastCall consumer marketplace it connects to (the "<strong>Platform</strong>"), and the website <a href="https://lastcall.co.in">lastcall.co.in</a> (collectively, the "<strong>Services</strong>").</p>
+<p class="source-block" data-source-seq="4">This Policy is an electronic record within the meaning of the Information Technology Act, 2000 ("<strong>IT Act</strong>") and the rules made thereunder, and is published in compliance with Rule 3(1) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, Rule 4 of the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 ("<strong>SPDI Rules</strong>"), and the Digital Personal Data Protection Act, 2023 ("<strong>DPDP Act</strong>") together with any rules notified thereunder. Being generated by a computer system, it does not require any physical or digital signature.</p>
+<p class="source-block" data-source-seq="5">This Policy applies primarily to restaurant owners, café operators, bakeries, grocery stores, cloud kitchens, and other food business operators and their authorised representatives who register on, access or use the Partner App ("<strong>Partner(s)</strong>", "<strong>you</strong>" or "<strong>your</strong>"). Where the Partner App displays limited personal data of end customers of the Platform ("<strong>Customers</strong>") for the purpose of order fulfilment, this Policy also describes how that data is handled.</p>
+<p class="source-block notice" data-source-seq="6">BY DOWNLOADING, INSTALLING, REGISTERING ON OR USING THE PARTNER APP, YOU ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD THIS POLICY AND CONSENT TO THE COLLECTION, USE, PROCESSING, STORAGE, DISCLOSURE AND TRANSFER OF YOUR INFORMATION AS DESCRIBED HEREIN. IF YOU DO NOT AGREE WITH THIS POLICY, PLEASE DO NOT USE THE SERVICES.</p>
+<h2 id="definitions" class="source-block" data-source-seq="7">1. Definitions</h2>
+<p class="source-block" data-source-seq="8">In this Policy, unless the context otherwise requires:</p>
 <ul>
-<li><strong>&ldquo;Applicable Law&rdquo;</strong> means all statutes, rules, regulations, directions, orders and standards in force in India applicable to a party or the Services, including the Consumer Protection Act, 2019 and the Consumer Protection (E-Commerce) Rules, 2020 (&ldquo;<strong>E-Commerce Rules</strong>&rdquo;), the Food Safety and Standards Act, 2006 (&ldquo;<strong>FSS Act</strong>&rdquo;), the Information Technology Act, 2000, and the Digital Personal Data Protection Act, 2023;</li>
-<li><strong>&ldquo;Partner&rdquo;</strong> or &ldquo;<strong>Store</strong>&rdquo; means an independent food business (restaurant, caf&eacute;, bakery, grocery store, cloud kitchen or similar) that lists surplus food on the Platform and is the seller of the food you buy;</li>
-<li><strong>&ldquo;Surprise Bag&rdquo;</strong> or &ldquo;<strong>Food Bag</strong>&rdquo; means a listing of surplus, near-closing or short-dated food offered by a Partner through the Platform at a discounted price, whose precise contents may be undisclosed and determined by the Partner at pickup, subject to the description, category and dietary attributes stated in the listing;</li>
-<li><strong>&ldquo;Order&rdquo;</strong> means your confirmed purchase of one or more Surprise Bags;</li>
-<li><strong>&ldquo;Pickup Window&rdquo;</strong> means the date and time range specified in a listing during which you must collect the Order;</li>
-<li><strong>&ldquo;Pickup Code&rdquo;</strong> means the unique code generated for an Order which you present to the Partner to complete handover;</li>
-<li>Headings are for convenience only; &ldquo;including&rdquo; means &ldquo;including without limitation&rdquo;; references to statutes include amendments and re-enactments.</li>
+<li class="source-block" data-source-seq="9">"<strong>Personal Data</strong>" means any data about an individual who is identifiable by or in relation to such data, as defined under Section 2(t) of the DPDP Act;</li>
+<li class="source-block" data-source-seq="10">"<strong>Sensitive Personal Data or Information</strong>" or "<strong>SPDI</strong>" has the meaning assigned under Rule 3 of the SPDI Rules and includes, inter alia, passwords, financial information such as bank account details, and biometric information;</li>
+<li class="source-block" data-source-seq="11">"<strong>Data Fiduciary</strong>" means the person who alone or in conjunction with others determines the purpose and means of processing of Personal Data (for the purposes of Partner account data, LastCall is the Data Fiduciary);</li>
+<li class="source-block" data-source-seq="12">"<strong>Data Principal</strong>" means the individual to whom the Personal Data relates — you, in respect of your own Personal Data;</li>
+<li class="source-block" data-source-seq="13">"<strong>Data Processor</strong>" means any person who processes Personal Data on behalf of a Data Fiduciary (e.g., our cloud infrastructure providers);</li>
+<li class="source-block" data-source-seq="14">"<strong>Processing</strong>" means a wholly or partly automated operation or set of operations performed on Personal Data, including collection, recording, organisation, structuring, storage, adaptation, retrieval, use, alignment or combination, indexing, sharing, disclosure, dissemination, restriction, erasure or destruction;</li>
+<li class="source-block" data-source-seq="15">"<strong>Surprise Bag</strong>" or "<strong>Food Bag</strong>" means a listing of surplus food offered by a Partner at a discounted price through the Platform;</li>
+<li class="source-block" data-source-seq="16">"<strong>Order</strong>" means a Customer's purchase of a Surprise Bag from a Partner through the Platform.</li>
 </ul>
-<h2>2. Nature of the Platform; Relationship of the Parties</h2>
-<p>LastCall operates a <strong>marketplace e-commerce platform</strong> within the meaning of the E-Commerce Rules, acting as an intermediary that facilitates the listing and sale of surplus food by independent Partners to Customers. <strong>LastCall does not prepare, manufacture, package, store, sell or deliver food, does not take title to any food, and is not a party to the contract of sale formed between the Partner and you upon confirmation of an Order.</strong> The Partner is the seller of record and the &ldquo;food business operator&rdquo; under the FSS Act in respect of all food it lists and supplies. Your contract for the purchase of food is with the Partner; LastCall&rsquo;s role is to provide the Platform and, as described in Section 6, to collect payment on the Partner&rsquo;s behalf.</p>
-<h2>3. Eligibility, Registration and Account</h2>
-<h3>3.1 Eligibility</h3>
+<h2 id="scope-and-applicability" class="source-block" data-source-seq="17">2. Scope and Applicability</h2>
+<p class="source-block" data-source-seq="18">This Policy applies to all information collected through the Partner App, the Partner web dashboard (if any), communications between you and LastCall (including email to <a href="mailto:lastcallfoodteam@gmail.com">lastcallfoodteam@gmail.com</a> , in-app support, WhatsApp or telephone), and the onboarding process. It applies to Partners located in, operating in, or offering food in <strong>India</strong>. Where you access the Services from outside India, additional or different terms may apply, and you remain responsible for compliance with local law.</p>
+<p class="source-block" data-source-seq="19">This Policy does not apply to third-party websites, applications or services that may be linked from the Services (for example, the Google Play Store, payment gateway pages, or mapping services). Your use of such third-party services is governed by their respective privacy policies, and we encourage you to review them.</p>
+<p class="source-block" data-source-seq="20">If you are an employee, manager or authorised representative operating a Partner account on behalf of a food business, you represent that you are authorised to accept this Policy on behalf of that business and to provide any Personal Data of the business's personnel that is submitted to us.</p>
+<h2 id="information-we-collect" class="source-block" data-source-seq="21">3. Information We Collect</h2>
+<p class="source-block" data-source-seq="22">We collect information in three ways: (a) information you provide to us directly; (b) information collected automatically when you use the Partner App; and (c) information received from third parties. We follow the principle of <strong>data </strong><strong>minimisation</strong> and collect only such Personal Data as is necessary for the specified purposes.</p>
+<h3 id="information-you-provide-directly" class="source-block" data-source-seq="23">3.1 Information You Provide Directly</h3>
 <ul>
-<li>You must be at least eighteen (18) years of age and competent to contract under the Indian Contract Act, 1872;</li>
-<li>You must provide true, accurate, current and complete information and keep it updated;</li>
-<li>You must not have been previously suspended, blocked or removed from the Platform, and you must not register a new account to circumvent any restriction or block.</li>
+<li class="source-block" data-source-seq="24"><strong>Identity and contact information</strong>: your name, mobile telephone number (verified via one-time password ("<strong>OTP</strong>")), email address, and designation within the food business;</li>
+<li class="source-block" data-source-seq="25"><strong>Business and store profile information</strong>: legal and trade name of the establishment, store category (e.g., restaurant, bakery, café, grocery), business description, store address, geographic coordinates (latitude and longitude) of the store, opening and closing times, pickup windows, cuisine tags and dietary attributes (vegetarian, vegan, gluten-free), and photographs of the storefront, kitchen or food items uploaded by you;</li>
+<li class="source-block" data-source-seq="26"><strong>Regulatory and compliance information</strong>: your Food Safety and Standards Authority of India ("<strong>FSSAI</strong>") licence or registration number, Goods and Services Tax Identification Number ("<strong>GSTIN</strong>"), Permanent Account Number ("<strong>PAN</strong>") of the business or proprietor, shop and establishment registration, and any other licences or documents we reasonably request during onboarding or periodic verification;</li>
+<li class="source-block" data-source-seq="27"><strong>Financial and settlement information</strong>: bank account number, IFSC code, account holder name, UPI identifiers, cancelled cheque images or bank statements provided for payout verification, invoices, and commission or settlement records. Bank account details and payment instrument information constitute SPDI under the SPDI Rules and are handled with heightened safeguards;</li>
+<li class="source-block" data-source-seq="28"><strong>Listing and inventory information</strong>: Surprise Bag titles, sub-categories, descriptions, original and discounted prices, available quantities, pickup dates and times, estimated weights of food saved, and item photographs;</li>
+<li class="source-block" data-source-seq="29"><strong>Communications and support data</strong>: the content of messages, complaints, grievances, feedback, survey responses and FAQ interactions you submit through the Help &amp; Support section of the Partner App or by email, together with associated metadata such as timestamps;</li>
+<li class="source-block" data-source-seq="30"><strong>Verification media</strong>: photographs or documents captured using your device camera or selected from your photo library, where you grant the CAMERA and READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE permissions for this purpose.</li>
 </ul>
-<h3>3.2 Registration and Verification</h3>
-<p>Registration requires verification of your mobile number by one-time password (OTP). You may add a display name, email address, profile photo and food preferences. You are responsible for all activity under your account and for maintaining the confidentiality of your device, SIM and OTPs. Changes to your registered mobile number must be completed through the in-app OTP-verified phone-change process. You must notify us immediately at <a href="mailto:lastcallfoodteam@gmail.com" rel="noopener noreferrer">lastcallfoodteam@gmail.com</a> of any unauthorised use of your account. We are not liable for loss arising from your failure to secure your account.</p>
-<h2>4. Browsing, Orders and Pickup</h2>
+<h3 id="information-collected-automatically" class="source-block" data-source-seq="31">3.2 Information Collected Automatically</h3>
 <ul>
-<li>The App displays Surprise Bags offered by nearby Partners, with an indicative description, category, dietary attributes, price and Pickup Window. Because a Surprise Bag contains surplus food, its exact contents are generally undisclosed and are determined by the Partner at pickup, subject to the stated description and dietary attributes;</li>
-<li>When you place an Order and payment is confirmed, a contract of sale is formed between you and the Partner, and a Pickup Code is generated. You will receive the Store location and Pickup Window in the App;</li>
-<li>You must collect the Order yourself (or through a person you authorise) within the Pickup Window by presenting the Pickup Code at the Store. Handover against a valid Pickup Code completes the Order;</li>
-<li>If you do not collect within the Pickup Window, the Order may be treated as a no-show and the food may be dealt with by the Partner. Refund treatment of no-shows is governed by Section 7;</li>
-<li>Surprise Bags are offered subject to availability and may sell out. Where a Partner is unable to fulfil an accepted Order (for example, stock sells through or the Store closes unexpectedly), the Order may be cancelled and you will be refunded in accordance with Section 7;</li>
-<li>You shall treat Partner staff courteously, collect Orders in a lawful and orderly manner, and not seek to transact off-Platform for Orders originated on the Platform.</li>
+<li class="source-block" data-source-seq="32"><strong>Device and technical information</strong>: device model, manufacturer, operating system and version, application version, unique application instance identifiers, Firebase installation identifiers, push notification registration tokens (Firebase Cloud Messaging ("<strong>FCM</strong>") tokens), device language, and time zone;</li>
+<li class="source-block" data-source-seq="33"><strong>Approximate and precise location information</strong>: with your permission (ACCESS_COARSE_LOCATION and/or ACCESS_FINE_LOCATION), we collect device location for the limited purposes of automatically detecting your country and region during setup, verifying and geocoding your store address, and displaying your store correctly to Customers on the map. You may decline or revoke location permission through your device settings; in that case you may enter your store location manually and certain map features may be limited;</li>
+<li class="source-block" data-source-seq="34"><strong>Network information</strong>: network connection state and type, collected via the ACCESS_NETWORK_STATE permission, used to monitor connectivity and queue actions taken while offline;</li>
+<li class="source-block" data-source-seq="35"><strong>Usage and interaction data</strong>: screens viewed, features used, listings created or edited, orders accepted, marked ready, completed or cancelled, notification interactions, session start and end times, and in-app settings;</li>
+<li class="source-block" data-source-seq="36"><strong>Transaction and performance data</strong>: order identifiers, order values, pickup codes, order statuses and status timestamps, cancellation events and the party responsible for cancellation (customer, store or system), cancellation reasons, running counts of accepted-order cancellations, daily and total revenue figures, number of orders completed, ratings and review comments received from Customers, and estimated kilograms of food saved;</li>
+<li class="source-block" data-source-seq="37"><strong>Trust, safety and integrity data</strong>: flags generated by our automated monitoring systems in respect of unusual or potentially abusive activity (for example, a pattern of accepting Orders and subsequently cancelling them), including flag type, occurrence counts, first and last occurrence timestamps, an assigned risk level (low, medium or high), flag status (active, cleared or restricted), and the resulting account status of your store (active, restricted or blocked), together with an audit trail of such events;</li>
+<li class="source-block" data-source-seq="38"><strong>Crash, diagnostic and error data</strong>: crash logs, stack traces, error reports and performance measurements used to diagnose and fix defects;</li>
+<li class="source-block" data-source-seq="39"><strong>Local storage</strong>: the Partner App stores limited session data on your device (for example, store ID, store name, owner ID, owner email, login state and store active state) in application preferences to keep you signed in and to operate the app efficiently. The Partner App does not use browser cookies, but analogous local storage technologies serve similar functions.</li>
 </ul>
-<h2>5. Food Safety, Allergens and Suitability</h2>
+<h3 id="information-received-from-third-parties" class="source-block" data-source-seq="40">3.3 Information Received from Third Parties</h3>
 <ul>
-<li><strong>Seller responsibility</strong>: the Partner, as the food business operator, is solely responsible for the safety, quality, hygiene, preparation, packaging and labelling of the food it supplies, and for compliance with the FSS Act and regulations thereunder;</li>
-<li><strong>Surplus food</strong>: Surprise Bags consist of surplus or near-closing food intended for prompt consumption. You should inspect the food on collection and consume it within a reasonable time. If you receive food that appears unsafe, spoiled or not as described, do not consume it and report it through the App so we can facilitate a resolution;</li>
-<li><strong>Allergens and dietary needs</strong>: because the exact contents of a Surprise Bag may be undisclosed, the App cannot guarantee the absence of any allergen. If you have a food allergy, intolerance or specific dietary requirement, you are responsible for checking with the Partner at pickup before consuming the food. LastCall does not warrant that any Surprise Bag is free from a particular allergen or ingredient;</li>
-<li><strong>No medical or dietary advice</strong>: information such as &ldquo;vegetarian&rdquo;, &ldquo;vegan&rdquo; or &ldquo;gluten-free&rdquo; tags is supplied by the Partner. While Partners are required to describe food accurately, you rely on such tags at your own discretion and should confirm with the Partner where the matter is important to your health.</li>
+<li class="source-block" data-source-seq="41"><strong>Authentication providers</strong>: confirmation of your verified telephone number and authentication tokens from Google Firebase Authentication;</li>
+<li class="source-block" data-source-seq="42"><strong>Payment and settlement providers</strong>: payment confirmations, payment identifiers, settlement statuses, refund statuses and chargeback information from the payment aggregators and banks that process Platform transactions;</li>
+<li class="source-block" data-source-seq="43"><strong>Customers of the Platform</strong>: ratings, reviews and complaints concerning your store submitted by Customers;</li>
+<li class="source-block" data-source-seq="44"><strong>Mapping providers</strong>: geocoding results and map data from Google Maps Platform used to locate and display your store;</li>
+<li class="source-block" data-source-seq="45"><strong>Public and governmental sources</strong>: verification of FSSAI licence status, GSTIN status or other public registers, where permitted by law;</li>
+<li class="source-block" data-source-seq="46"><strong>App distribution platforms</strong>: install, update and, where applicable, aggregated statistics from the Google Play Store.</li>
 </ul>
-<h2>6. Prices, Payments and Taxes</h2>
+<h3 id="customer-personal-data-displayed-to-you" class="source-block" data-source-seq="47">3.4 Customer Personal Data Displayed to You</h3>
+<p class="source-block" data-source-seq="48">To enable order fulfilment, the Partner App displays limited Personal Data of Customers to you, namely the Customer's first name (or display name), a masked or full contact number where necessary for pickup coordination, the pickup code, order details, payment method and payment status. <strong>You receive this data solely as necessary for fulfilling the specific Order.</strong> You must treat all Customer Personal Data as confidential, must not copy, export, scrape, store outside the Partner App, sell, or use it for marketing, profiling or any purpose other than fulfilling that Order, and must comply with the DPDP Act in respect of any processing you undertake. Misuse of Customer Personal Data is a material breach of our Terms &amp; Conditions and may result in immediate suspension, termination and reporting to relevant authorities.</p>
+<h3 id="information-we-do-not-knowingly-collect" class="source-block" data-source-seq="49">3.5 Information We Do Not Knowingly Collect</h3>
+<p class="source-block" data-source-seq="50">We do not knowingly collect biometric data, health data, caste or religious information, or data revealing political opinions. We do not request access to your contacts, call logs, SMS (other than device-level OTP auto-read facilitated by the operating system, where applicable), or microphone. The Services are business tools and are not directed at children; see Section 12.</p>
+<h2 id="purposes-of-processing-and-legal-bases" class="source-block" data-source-seq="51">4. Purposes of Processing and Legal Bases</h2>
+<p class="source-block" data-source-seq="52">We process Personal Data for the following purposes and, in each case, on the legal basis of your <strong>consent</strong> obtained at registration and/or the <strong>legitimate uses</strong> recognised under Section 7 of the DPDP Act (including voluntary provision of data for a specified purpose, compliance with law and judgments, and employment-related purposes), and, where applicable, performance of our contract with you:</p>
 <ul>
-<li>Prices for Surprise Bags are set by the Partner and displayed in the App at the discounted price. Applicable taxes, platform fees or convenience charges (if any) will be shown before you confirm payment;</li>
-<li>Payments are processed in-app through our third-party payment provider (Stripe) and other RBI-regulated payment aggregators. <strong>You appoint LastCall (and its payment partners) as the Partner&rsquo;s limited payment-collection agent</strong>, so that your payment to LastCall discharges your payment obligation to the Partner for that Order;</li>
-<li>You must use only payment instruments you are authorised to use. Card, UPI and other payment-instrument details are handled by the payment provider on its secure interface; LastCall does not store your full payment credentials;</li>
-<li>You shall not charge back or dispute a payment in bad faith. Fraudulent or abusive chargebacks may result in restriction or blocking of your account and recovery of amounts due, without prejudice to your genuine rights against unauthorised transactions;</li>
-<li>Where any tax invoice is required for a supply of food, it is issued by the Partner as the seller; LastCall may issue documentation in respect of its own platform charges.</li>
+<li class="source-block" data-source-seq="53"><strong>Account creation and authentication</strong>: to register your Partner account, verify your telephone number via OTP, authenticate sessions, and secure access to your account;</li>
+<li class="source-block" data-source-seq="54"><strong>Provision of the Services</strong>: to create and manage your store profile, publish Surprise Bag listings to Customers, transmit Orders to you in real time, generate and verify pickup codes, track order lifecycles, and operate dashboards showing your orders, revenue, ratings and food-saved metrics;</li>
+<li class="source-block" data-source-seq="55"><strong>Payments and settlements</strong>: to calculate amounts payable to you, process payouts to your designated bank account, apply commissions and fees, generate invoices and statements, process refunds, and maintain accounting records;</li>
+<li class="source-block" data-source-seq="56"><strong>Communications</strong>: to send you transactional and service communications, including new-order alerts, order status updates, pickup reminders, settlement notifications, policy updates and administrative announcements via push notification (FCM), SMS, email, WhatsApp or in-app notification; and, subject to your right to opt out, marketing and promotional communications;</li>
+<li class="source-block" data-source-seq="57"><strong>Verification and compliance</strong>: to verify your identity, business credentials, FSSAI licence, GSTIN and bank details; to comply with applicable laws, including tax laws (such as collection of tax at source under Section 52 of the Central Goods and Services Tax Act, 2017, where applicable), the Food Safety and Standards Act, 2006, the Consumer Protection Act, 2019 and the Consumer Protection (E-Commerce) Rules, 2020; and to respond to lawful requests from governmental and regulatory authorities;</li>
+<li class="source-block" data-source-seq="58"><strong>Trust, safety and fraud prevention</strong>: to detect, investigate, prevent and act upon fraudulent, abusive, unsafe or policy-violating activity, including automated flagging of unusual cancellation patterns, application of account restrictions or blocks in accordance with our published thresholds, maintenance of audit trails, and protection of Customers, Partners, LastCall and the public;</li>
+<li class="source-block" data-source-seq="59"><strong>Quality, analytics and improvement</strong>: to analyse usage in aggregate, measure Platform performance, understand food-rescue impact, debug and fix errors, develop new features, and conduct research using de-identified or aggregated data;</li>
+<li class="source-block" data-source-seq="60"><strong>Dispute resolution and legal claims</strong>: to handle complaints, grievances, chargebacks and disputes, enforce our Terms &amp; Conditions, and establish, exercise or defend legal claims;</li>
+<li class="source-block" data-source-seq="61"><strong>Business transactions</strong>: to evaluate or carry out a merger, acquisition, financing, reorganisation or sale of assets, subject to appropriate confidentiality safeguards.</li>
 </ul>
-<h2>7. Cancellations, Refunds and No-Shows</h2>
+<p class="source-block" data-source-seq="62">Where processing is based on consent, you may withdraw consent at any time as described in Section 10; withdrawal does not affect the lawfulness of processing carried out before withdrawal and may result in our inability to continue providing some or all of the Services.</p>
+<h2 id="disclosure-and-sharing-of-information" class="source-block" data-source-seq="63">5. Disclosure and Sharing of Information</h2>
+<p class="source-block" data-source-seq="64">We do not sell your Personal Data. We share information only as described below and, in the case of Data Processors, under contracts requiring them to process data only on our instructions and with appropriate security safeguards:</p>
 <ul>
-<li><strong>Cancellation by you</strong>: you may cancel an Order in the circumstances and within the timeframes stated in the App at the time of purchase. Because Surprise Bags are prepared from perishable surplus stock reserved for you, cancellation may be restricted close to or during the Pickup Window;</li>
-<li><strong>Cancellation by the Partner or system</strong>: where a Partner cancels an accepted Order (for example, stock sells through or the Store cannot open) or the system cancels it (for example, payment failure), you will be refunded the amount paid for the cancelled Order to the original payment method;</li>
-<li><strong>No-shows</strong>: if you do not collect an Order within the Pickup Window and the cause is not attributable to the Partner or LastCall, the Order may be treated as a no-show and may not be refundable, as indicated in the App at the time of purchase;</li>
-<li><strong>Non-conforming food</strong>: if the food supplied is unsafe, materially not as described, or materially short of the listing, report it promptly through the App with supporting details. Eligible cases may be resolved by refund, replacement or goodwill credit;</li>
-<li><strong>Refund timelines</strong>: approved refunds are processed to the original payment method within the timelines of the payment provider and applicable law. This Section does not limit your statutory rights under the Consumer Protection Act, 2019.</li>
+<li class="source-block" data-source-seq="65"><strong>With Customers</strong>: your store name, category, description, photographs, address, map location, opening hours, pickup windows, listings, prices, dietary tags, ratings and reviews are displayed publicly on the consumer Platform. Your store contact number may be made available to a Customer with an active Order for pickup coordination;</li>
+<li class="source-block" data-source-seq="66"><strong>Cloud infrastructure and analytics providers</strong>: we use <strong>Google Firebase</strong> services (including Firebase Authentication, Cloud Firestore, Firebase Cloud Storage, Firebase Cloud Messaging, and Firebase crash and analytics services) operated by Google LLC and its affiliates to host data, authenticate users, store images, deliver push notifications and analyse aggregate usage; and <strong>Google Maps Platform</strong> for geocoding and maps. Google acts as our Data Processor for hosted content and processes certain service data as described in Google's own privacy documentation;</li>
+<li class="source-block" data-source-seq="67"><strong>Payment aggregators, banks and financial institutions</strong>: to process Customer payments, Partner payouts, refunds and reconciliations, in compliance with directions of the Reserve Bank of India applicable to such entities;</li>
+<li class="source-block" data-source-seq="68"><strong>Communication providers</strong>: SMS gateways, email service providers and messaging platforms engaged to deliver OTPs and notifications;</li>
+<li class="source-block" data-source-seq="69"><strong>Professional advisers and auditors</strong>: lawyers, accountants, auditors and insurers, under duties of confidentiality;</li>
+<li class="source-block" data-source-seq="70"><strong>Governmental, regulatory and law-enforcement authorities</strong>: where required by applicable law, court order, or lawful request, including disclosures to the FSSAI, tax authorities, the Data Protection Board of India, CERT-In, or police authorities; and where we believe in good faith that disclosure is necessary to protect the rights, property or safety of any person or to prevent or investigate fraud or illegality;</li>
+<li class="source-block" data-source-seq="71"><strong>Group companies and successors</strong>: our affiliates, and any acquirer or successor in the event of a corporate transaction, subject to this Policy or an equally protective policy;</li>
+<li class="source-block" data-source-seq="72"><strong>With your direction or consent</strong>: any other disclosure you request or authorise.</li>
 </ul>
-<h2>8. Ratings, Reviews and User Content</h2>
-<p>You may rate and review Orders you have completed. You shall provide honest ratings and reviews based on genuine experience, shall not submit or procure fake, defamatory, obscene, hateful or misleading content, and shall not accept inducements to post or alter a review. You retain ownership of the ratings, reviews, images and other content you submit (&ldquo;User Content&rdquo;) and grant LastCall a worldwide, non-exclusive, royalty-free, sublicensable licence to host, store, reproduce, adapt (e.g., crop or compress), publish and display User Content on and in connection with the Platform and LastCall&rsquo;s marketing of the Platform. You represent that your User Content is lawful and does not infringe any third-party rights or violate Rule 3(1)(b) of the IT Rules, 2021. We may remove or decline to publish User Content that violates these Terms or Applicable Law.</p>
-<h2>9. Prohibited Conduct</h2>
-<p>Without limiting other provisions, you shall not: (a) provide false, misleading or incomplete information to LastCall or Partners; (b) create multiple or fake accounts, or abuse promotions, referral schemes or first-order offers; (c) manipulate ratings, reviews, prices or metrics; (d) resell food obtained through the Platform, or use the Services for any commercial or unlawful purpose; (e) circumvent restrictions or blocks by re-registering; (f) harass, abuse, discriminate against or defraud Partners, their staff or LastCall personnel; (g) transact off-Platform for Orders originated on the Platform, or otherwise attempt platform circumvention; (h) introduce viruses or malicious code, or probe or test the vulnerability of the Platform without authorisation; (i) use robots, scrapers or automated means to access the Platform; or (j) assist or permit any third party to do any of the foregoing.</p>
-<h2>10. Trust & Safety: Restriction and Blocking</h2>
-<p>Automated systems monitor account activity for fraud, chargeback abuse, repeated no-shows and policy violations, and may generate flags. Accumulation of flags beyond internal thresholds may result in your account being placed under review, restricted (which may limit ordering or promotions), or, for serious violations such as fraud or abuse of Partner staff, blocked without prior notice. You may view your account status in the App and may seek human review of any restriction or block by writing to the Grievance Officer (Section 15) with supporting information; we will review in good faith and may restore your account. Restriction or blocking does not extinguish accrued rights and obligations, including our obligation to refund amounts properly due for cancelled Orders.</p>
-<h2>11. Intellectual Property</h2>
-<p>The Platform, the App, and all associated software, designs, interfaces, algorithms, databases, documentation, trade marks (including &ldquo;LastCall&rdquo; and &ldquo;LastBite&rdquo;, and formerly &ldquo;LastCallFood&rdquo;), logos and content (excluding User Content and Partner content) are owned by or licensed to LastCall and protected under Applicable Law. We grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable licence to use the App on compatible devices solely to browse and purchase food for your own personal use in accordance with these Terms. You shall not copy, modify, adapt, translate, reverse engineer, decompile, disassemble, or create derivative works of the Platform; circumvent security or access controls; interfere with its operation; or use it to build a competing product. You may use LastCall&rsquo;s name and marks only as expressly permitted by us in writing.</p>
-<h2>12. Disclaimers</h2>
-<p class="notice">THE SERVICES ARE PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS. TO THE MAXIMUM EXTENT PERMITTED BY LAW, LASTCALL DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND UNINTERRUPTED OR ERROR-FREE OPERATION. LASTCALL DOES NOT PREPARE OR SELL THE FOOD AND DOES NOT WARRANT THE QUALITY, SAFETY, QUANTITY OR CONTENTS OF ANY SURPRISE BAG, WHICH ARE THE RESPONSIBILITY OF THE PARTNER. TEMPORARY UNAVAILABILITY MAY OCCUR DUE TO MAINTENANCE, UPDATES, NETWORK CONDITIONS OR EVENTS BEYOND OUR CONTROL. NOTHING IN THIS SECTION EXCLUDES OR LIMITS ANY RIGHT OR REMEDY YOU HAVE AS A CONSUMER UNDER THE CONSUMER PROTECTION ACT, 2019 THAT CANNOT LAWFULLY BE EXCLUDED OR LIMITED.</p>
-<h2>13. Limitation of Liability</h2>
-<p class="notice">TO THE MAXIMUM EXTENT PERMITTED BY LAW: (A) LASTCALL SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES; AND (B) LASTCALL&rsquo;S AGGREGATE LIABILITY ARISING OUT OF OR RELATING TO THE PLATFORM SERVICES IN ANY TWELVE (12) MONTH PERIOD SHALL NOT EXCEED THE TOTAL PLATFORM FEES ACTUALLY RETAINED BY LASTCALL FROM YOUR ORDERS DURING THAT PERIOD OR INR 10,000 (RUPEES TEN THOUSAND), WHICHEVER IS HIGHER. THESE LIMITS APPLY TO LASTCALL&rsquo;S ROLE AS INTERMEDIARY AND PLATFORM PROVIDER AND DO NOT AFFECT THE PARTNER&rsquo;S LIABILITY AS SELLER, NOR ANY LIABILITY THAT CANNOT BE LIMITED UNDER APPLICABLE LAW, INCLUDING LIABILITY FOR FRAUD OR WILFUL MISCONDUCT AND YOUR NON-EXCLUDABLE RIGHTS UNDER THE CONSUMER PROTECTION ACT, 2019.</p>
-<h2>14. Term, Suspension, Termination and Account Deletion</h2>
+<p class="source-block" data-source-seq="73">We may disclose aggregated or de-identified information — for example, total kilograms of food saved in a city, or aggregate order volumes — that cannot reasonably be used to identify you, for impact reporting, marketing, investor communications and research.</p>
+<h2 id="cross-border-transfer-of-data" class="source-block" data-source-seq="74">6. Cross-Border Transfer of Data</h2>
+<p class="source-block" data-source-seq="75">Our infrastructure providers, including Google, may store and process data on servers located outside India. By using the Services, you understand that your information may be transferred to, stored in and processed in jurisdictions other than India. We will effect such transfers in compliance with Section 16 of the DPDP Act and any notifications issued by the Central Government restricting transfer to specified countries, and, where the SPDI Rules apply, only to entities ensuring the same level of data protection as required under Indian law. Where the law requires particular categories of data (including certain payment data pursuant to Reserve Bank of India directions) to be stored in India, we and our payment providers will comply with such localisation requirements.</p>
+<h2 id="data-retention" class="source-block" data-source-seq="76">7. Data Retention</h2>
+<p class="source-block" data-source-seq="77">We retain Personal Data only for as long as necessary to fulfil the purposes for which it was collected, to comply with legal, tax, accounting and regulatory obligations, to resolve disputes, and to enforce our agreements. Illustratively:</p>
 <ul>
-<li>These Terms commence upon your acceptance and continue until terminated;</li>
-<li><strong>You</strong> may terminate at any time by ceasing use and requesting account deletion through the App or support. Orders outstanding at the time must be collected or lawfully cancelled before deletion takes effect;</li>
-<li><strong>We</strong> may suspend, restrict or terminate your account with immediate effect where required by law or where we reasonably believe you have materially breached these Terms, engaged in fraud, chargeback abuse or platform circumvention, or abused Partners or their staff; in other cases we may terminate for convenience on reasonable notice;</li>
-<li>Upon termination or deletion, your data is handled per the Privacy Policy. Termination does not affect accrued rights and liabilities, and Sections which by their nature should survive (including 5, 8, 11, 12, 13, 15 and 16) survive termination.</li>
+<li class="source-block" data-source-seq="78"><strong>Account and store profile data</strong> is retained for the life of your account and thereafter as described below;</li>
+<li class="source-block" data-source-seq="79"><strong>Order, transaction, settlement and invoice records</strong> are retained for a minimum of eight (8) years in accordance with obligations under Indian tax and company law;</li>
+<li class="source-block" data-source-seq="80"><strong>Trust-and-safety flags, cancellation logs and audit trails</strong> are retained for as long as reasonably necessary to protect the Platform against fraud and abuse, including after account closure, and to demonstrate compliance;</li>
+<li class="source-block" data-source-seq="81"><strong>Support communications and grievance records</strong> are retained for at least the period required under the Consumer Protection (E-Commerce) Rules, 2020 and the IT Rules, 2021;</li>
+<li class="source-block" data-source-seq="82"><strong>Device tokens and diagnostic data</strong> are retained for short rolling periods consistent with their technical purpose.</li>
 </ul>
-<h2>15. Grievance Redressal</h2>
-<p>In compliance with the E-Commerce Rules and the IT Rules, 2021, LastCall has appointed a Grievance Officer. You may address grievances concerning the Services to:</p>
+<p class="source-block" data-source-seq="83">Upon deletion or termination of your account, your store record is removed from active systems and an archival copy may be moved to a segregated deletion archive for a limited period to permit account restoration in cases of accidental deletion, to complete pending settlements, refunds and disputes, to comply with retention laws, and to prevent circumvention of restrictions or blocks through re-registration. Thereafter, data is deleted or irreversibly anonymised. Anonymised and aggregated data may be retained indefinitely.</p>
+<h2 id="security-of-information" class="source-block" data-source-seq="84">8. Security of Information</h2>
+<p class="source-block" data-source-seq="85">We implement reasonable security practices and procedures as contemplated under Section 43A of the IT Act, the SPDI Rules, and Section 8(5) of the DPDP Act, designed to protect Personal Data against unauthorised access, disclosure, alteration, loss and destruction. These include, without limitation:</p>
 <ul>
-<li><strong>Grievance Officer</strong>: Salman N and Govind Amilkanthwar</li>
-<li><strong>Email</strong>: <a href="mailto:lastcallfoodteam@gmail.com" rel="noopener noreferrer">lastcallfoodteam@gmail.com</a></li>
+<li class="source-block" data-source-seq="86">encryption of data in transit using industry-standard TLS, with cleartext (unencrypted HTTP) traffic disabled at the application level;</li>
+<li class="source-block" data-source-seq="87">encryption at rest applied by our cloud infrastructure providers;</li>
+<li class="source-block" data-source-seq="88">authentication via OTP-verified telephone numbers and secure session management;</li>
+<li class="source-block" data-source-seq="89">granular database security rules restricting each Partner's access to its own store, listings, orders and statistics, and separating Partner-side data from Customer-side data;</li>
+<li class="source-block" data-source-seq="90">role-based access controls, with elevated administrative functions restricted to authorised LastCall personnel;</li>
+<li class="source-block" data-source-seq="91">disabling of device backup of application data and avoidance of storing sensitive data in device backups;</li>
+<li class="source-block" data-source-seq="92">logging, monitoring and automated anomaly detection, including the suspicious-activity systems described in this Policy;</li>
+<li class="source-block" data-source-seq="93">organisational measures such as confidentiality undertakings, need-to-know access, and periodic review of security practices.</li>
 </ul>
-<p>Grievances will be acknowledged within forty-eight (48) hours and resolved within one (1) month of receipt, or such shorter period as Applicable Law prescribes. In-app Help & Support, including FAQs and email escalation, is available within the App. This mechanism does not prejudice your rights under Applicable Law, including your right to approach the consumer dispute redressal commissions established under the Consumer Protection Act, 2019.</p>
-<h2>16. Governing Law, Dispute Resolution and Jurisdiction</h2>
+<p class="source-block" data-source-seq="94">No method of transmission over the internet or electronic storage is completely secure. While we strive to protect your Personal Data, we cannot guarantee absolute security. You are responsible for maintaining the confidentiality of your device, SIM and OTPs, for enabling device-level security, and for notifying us immediately at <a href="mailto:lastcallfoodteam@gmail.com">lastcallfoodteam@gmail.com</a>  of any suspected unauthorised access to your account.</p>
+<h2 id="personal-data-breach" class="source-block" data-source-seq="95">9. Personal Data Breach</h2>
+<p class="source-block" data-source-seq="96">In the event of a personal data breach, we will notify the Data Protection Board of India and each affected Data Principal in the form and manner prescribed under the DPDP Act and rules thereunder, and will report cyber security incidents to the Indian Computer Emergency Response Team (CERT-In) within the timelines prescribed under the CERT-In directions dated 28 April 2022 (currently six hours from noticing or being notified of specified incidents). We maintain internal incident response procedures and system logs in accordance with applicable CERT-In requirements.</p>
+<h2 id="your-rights-as-a-data-principal" class="source-block" data-source-seq="97">10. Your Rights as a Data Principal</h2>
+<p class="source-block" data-source-seq="98">Subject to the DPDP Act and applicable exemptions, you have the following rights in respect of your Personal Data:</p>
 <ul>
-<li>These Terms and any dispute or claim arising out of or in connection with them or the Services are governed by the laws of India;</li>
-<li>The parties shall first attempt to resolve any dispute amicably through the grievance process and good-faith discussion;</li>
-<li><strong>Subject to your non-excludable rights as a consumer</strong>, the courts at Kozhikode, Kerala shall have jurisdiction over disputes arising out of or relating to these Terms. Nothing in these Terms requires you to give up your right, as a consumer, to file a complaint before the consumer dispute redressal commission having territorial jurisdiction under the Consumer Protection Act, 2019, or prevents either party from seeking urgent injunctive relief from a court of competent jurisdiction.</li>
+<li class="source-block" data-source-seq="99"><strong>Right to access</strong>: to obtain a summary of the Personal Data being processed, the processing activities undertaken, the identities of Data Fiduciaries and Data Processors with whom the data has been shared, and any other prescribed information;</li>
+<li class="source-block" data-source-seq="100"><strong>Right to correction and updating</strong>: to have inaccurate or misleading data corrected, incomplete data completed, and data updated. You can edit most store profile details directly in the Partner App; changes to your verified telephone number are effected through an OTP-verified phone-change process; other corrections may be requested through support;</li>
+<li class="source-block" data-source-seq="101"><strong>Right to erasure</strong>: to request erasure of Personal Data that is no longer necessary for the specified purpose, subject to retention required by law. You may initiate account deletion through the Partner App or by written request to <a href="mailto:lastcallfoodteam@gmail.com">lastcallfoodteam@gmail.com</a> ;</li>
+<li class="source-block" data-source-seq="102"><strong>Right to withdraw consent</strong>: at any time, with the ease with which it was given, by adjusting device permissions, disabling notification categories, or writing to us; consequences of withdrawal are described in Section 4;</li>
+<li class="source-block" data-source-seq="103"><strong>Right of grievance redressal</strong>: to have your grievances addressed by our Grievance Officer within the timelines specified in Section 15;</li>
+<li class="source-block" data-source-seq="104"><strong>Right to nominate</strong>: to nominate another individual to exercise your rights in the event of your death or incapacity;</li>
+<li class="source-block" data-source-seq="105"><strong>Right to complain to the Board</strong>: if unsatisfied with our response, to lodge a complaint with the Data Protection Board of India in the manner prescribed under the DPDP Act.</li>
 </ul>
-<h2>17. Modifications to the Terms and the Services</h2>
-<p>We may amend these Terms from time to time. Material amendments will be notified through the App, push notification or email before taking effect, except where a shorter period is required by law, security or regulatory reasons. Your continued use after the effective date constitutes acceptance; if you do not agree, your sole remedy is to stop using the Services and terminate under Section 14. We may also modify, add, suspend or discontinue features of the Services at any time, and may issue app updates that you must install to continue using the App.</p>
-<h2>18. General Provisions</h2>
+<p class="source-block" data-source-seq="106">You also have corresponding duties under Section 15 of the DPDP Act, including the duty not to impersonate another person, not to suppress material information, not to register false or frivolous grievances or complaints, and to furnish only verifiably authentic information when exercising the rights of correction or erasure.</p>
+<p class="source-block" data-source-seq="107">We will respond to verified requests within the timelines prescribed by applicable law. To protect your account, we may require you to verify your identity (for example, via OTP to your registered number) before acting on a request.</p>
+<h2 id="notifications-marketing-and-communication-preferences" class="source-block" data-source-seq="108">11. Notifications, Marketing and Communication Preferences</h2>
+<p class="source-block" data-source-seq="109">Transactional and service notifications — such as new-order alerts, cancellation notices, account-status changes and safety communications — are integral to the Services and are sent for as long as you maintain an account; disabling them may materially impair your ability to fulfil Orders on time. On Android 13 and above, push notifications require the POST_NOTIFICATIONS permission, which you may grant or revoke in device settings. Promotional and marketing communications will be sent only in accordance with applicable law, including the Telecom Commercial Communications Customer Preference Regulations, 2018, and you may opt out of them at any time via in-app settings, unsubscribe links, or by writing to <a href="mailto:lastcallfoodteam@gmail.com">lastcallfoodteam@gmail.com</a> , without affecting transactional messages.</p>
+<h2 id="children-s-privacy" class="source-block" data-source-seq="110">12. Children's Privacy</h2>
+<p class="source-block" data-source-seq="111">The Services are intended solely for use by persons who are at least eighteen (18) years of age and competent to contract under the Indian Contract Act, 1872. We do not knowingly collect Personal Data from children (persons under 18 years of age) and do not undertake tracking, behavioural monitoring or targeted advertising directed at children, consistent with Section 9 of the DPDP Act. If you believe a child has provided Personal Data to us, please contact the Grievance Officer, and we will take steps to delete such data.</p>
+<h2 id="automated-decision-making-account-restrictions-and-profiling" class="source-block" data-source-seq="112">13. Automated Decision-Making, Account Restrictions and Profiling</h2>
+<p class="source-block" data-source-seq="113">To protect the integrity of the Platform, we employ automated systems that monitor operational conduct — in particular, patterns of accepting Customer Orders and subsequently cancelling them. When such a pattern crosses published internal thresholds, the system may automatically generate a flag with an assigned risk level; repeated flags may result in an automatic change of your account status from "active" to "restricted", and serious or persistent conduct may result in a "blocked" status pending review. These measures are applied uniformly, are based on objective operational events recorded in the audit trail, and are used solely for trust-and-safety and service-quality purposes.</p>
+<p class="source-block" data-source-seq="114">Where your account is restricted or blocked, you will be informed of that status through the Partner App and may seek human review by contacting the Grievance Officer. Where an administrator lifts a restriction, an "account restored" confirmation is presented to you in the Partner App. We do not use automated decision-making to produce legal effects concerning you without a mechanism for human review.</p>
+<h2 id="third-party-services-and-links" class="source-block" data-source-seq="115">14. Third-Party Services and Links</h2>
+<p class="source-block" data-source-seq="116">The Partner App is built on and interoperates with third-party services, including Google Firebase, Google Maps Platform, Google Play services and payment aggregators. Those providers may collect certain service and diagnostic data directly, as described in their own privacy policies (for Google, at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Links from the Services to external websites are provided for convenience only; we are not responsible for the privacy practices or content of third parties.</p>
+<h2 id="grievance-officer-and-data-protection-contact" class="source-block" data-source-seq="117">15. Grievance Officer and Data Protection Contact</h2>
+<p class="source-block" data-source-seq="118">In accordance with the IT Act and rules thereunder, the Consumer Protection (E-Commerce) Rules, 2020, and the DPDP Act, the name and contact details of the Grievance Officer are provided below. The Grievance Officer shall acknowledge grievances within forty-eight (48) hours and endeavour to resolve them within the shorter of the timelines prescribed by applicable law (currently fifteen (15) days under the IT Rules, 2021, and one (1) month under the E-Commerce Rules for consumer grievances):</p>
 <ul>
-<li><strong>Entire agreement</strong>: these Terms and the Privacy Policy constitute the entire agreement between you and LastCall regarding the Platform and supersede all prior understandings;</li>
-<li><strong>Assignment</strong>: you may not assign these Terms or your account without our prior written consent; we may assign to an affiliate or in connection with a merger, acquisition or sale of assets;</li>
-<li><strong>Severability</strong>: if any provision is held invalid or unenforceable, it shall be enforced to the maximum extent permissible and the remaining provisions shall remain in full force;</li>
-<li><strong>Waiver</strong>: no failure or delay in exercising any right constitutes a waiver; waivers must be in writing;</li>
-<li><strong>Language</strong>: these Terms are executed in English; any translation is for convenience and the English version prevails;</li>
-<li><strong>Electronic acceptance</strong>: acceptance by tap, click or continued use is valid and enforceable under the Information Technology Act, 2000.</li>
+<li class="source-block" data-source-seq="119"><strong>Grievance Officer</strong>: Salman N</li>
+<li class="source-block" data-source-seq="120"><strong>Designation</strong>: Grievance Officer, LastCall Technologies IN,</li>
+<li class="source-block" data-source-seq="121"><strong>Email</strong>: <a href="mailto:lastcallfoodteam@gmail.com">lastcallfoodteam@gmail.com</a></li>
+<li class="source-block" data-source-seq="122"><strong>Hours</strong>: Monday to Friday, 10:00–18:00 IST (excluding public holidays)</li>
 </ul>
-<h2>19. Contact</h2>
+<p class="source-block" data-source-seq="123">For data-protection-specific queries, requests to exercise Data Principal rights, or consent withdrawals, you may also write to <a href="mailto:lastcallfoodteam@gmail.com">lastcallfoodteam@gmail.com</a> with the subject line "Data Principal Request".</p>
+<h2 id="changes-to-this-policy" class="source-block" data-source-seq="124">16. Changes to This Policy</h2>
+<p class="source-block" data-source-seq="125">We may update this Policy from time to time to reflect changes in law, technology or our practices. Material changes will be notified to you through the Partner App, by push notification, or by email to your registered address, and the "Last Updated" date above will be revised. Your continued use of the Services after the effective date of an updated Policy constitutes acceptance of the updated Policy; where the law requires fresh consent for new purposes of processing, we will seek it. We encourage you to review this Policy periodically. Prior versions may be obtained on request.</p>
+<h2 id="governing-law" class="source-block" data-source-seq="126">17. Governing Law</h2>
+<p class="source-block" data-source-seq="127">This Policy shall be governed by and construed in accordance with the laws of India. Subject to the dispute-resolution provisions of the Terms &amp; Conditions, the courts at Kozhikode, Kerala shall have exclusive jurisdiction over disputes arising out of or relating to this Policy.</p>
+<h2 id="contact-us" class="source-block" data-source-seq="128">18. Contact Us</h2>
+<p class="source-block" data-source-seq="129">If you have questions, concerns or requests regarding this Policy or our data practices, please contact us at:</p>
 <ul>
-<li><strong>LastCall Technologies IN</strong></li>
-<li>Email: <a href="mailto:lastcallfoodteam@gmail.com" rel="noopener noreferrer">lastcallfoodteam@gmail.com</a></li>
-<li>Website: <a href="https://lastcall.co.in" rel="noopener noreferrer">https://lastcall.co.in</a></li>
-</ul></div>
-<div class="footer">&copy; 2026 LastCall &middot; <a href="/">Home</a> &middot; <a href="/customer-privacy">Customer Privacy Policy</a></div>
+<li class="source-block" data-source-seq="130"><strong>LastCall Technologies IN</strong><strong> </strong></li>
+<li class="source-block" data-source-seq="131">Email: <a href="mailto:lastcallfoodteam@gmail.com">lastcallfoodteam@gmail.com</a> </li>
+<li class="source-block" data-source-seq="132">Website: <a href="https://lastcall.co.in">https://lastcall.co.in</a></li>
+</ul>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-links"><a href="/">Home</a><a href="/customer-privacy">Customer Privacy</a><a href="/customer-terms">Customer Terms</a><a href="/account-deletion">Account Deletion</a><a href="/restaurant-privacy">Restaurant Privacy</a><a href="/restaurant-terms">Restaurant Terms</a></div>
+    <div>© 2026 LastCall Technologies IN · Kozhikode, Kerala · <a href="mailto:lastcallfoodteam@gmail.com">lastcallfoodteam@gmail.com</a></div>
+  </footer>
 </body>
 </html>
-

@@ -1,29 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>LastCall — Restaurant food at half the price | Calicut</title>
-<meta name="description" content="Get restaurant food at 35-80% off in Calicut. Surplus biriyani, meals, mandi from top restaurants near you. Pickup only. Zero waste. Join the waitlist.">
-<meta name="keywords" content="LastCall, food deals Calicut, cheap food Kozhikode, surplus food, restaurant discounts, biriyani deals, food waste, SM Street food, Calicut restaurants">
-<meta name="author" content="LastCall">
-<meta name="theme-color" content="#E23744">
-
+<meta content="Get restaurant food at 35-80% off in Calicut. Surplus biriyani, meals, mandi from top restaurants near you. Pickup only. Zero waste. Join the waitlist." name="description"/>
+<meta content="LastCall, food deals Calicut, cheap food Kozhikode, surplus food, restaurant discounts, biriyani deals, food waste, SM Street food, Calicut restaurants" name="keywords"/>
+<meta content="LastCall" name="author"/>
+<meta content="#E23744" name="theme-color"/>
 <!-- Open Graph / Social Sharing -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="LastCall — Restaurant food. Half the price. Zero waste.">
-<meta property="og:description" content="Get surplus restaurant food at 35-80% off in Calicut. Biriyani ₹100, Meals ₹90, Mandi ₹160. Pickup only. Join 300+ on the waitlist.">
-<meta property="og:site_name" content="LastCall">
-
+<meta content="website" property="og:type"/>
+<meta content="LastCall — Restaurant food. Half the price. Zero waste." property="og:title"/>
+<meta content="Get surplus restaurant food at 35-80% off in Calicut. Biriyani ₹100, Meals ₹90, Mandi ₹160. Pickup only. Join 300+ on the waitlist." property="og:description"/>
+<meta content="LastCall" property="og:site_name"/>
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LastCall — Restaurant food at half the price">
-<meta name="twitter:description" content="Surplus restaurant food at 35-80% off in Calicut. Join the waitlist.">
-
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="LastCall — Restaurant food at half the price" name="twitter:title"/>
+<meta content="Surplus restaurant food at 35-80% off in Calicut. Join the waitlist." name="twitter:description"/>
 <!-- Favicon (inline SVG) -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23E23744'/><text x='50' y='68' font-family='Arial' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>LC</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;rect width='100' height='100' rx='20' fill='%23E23744'/&gt;&lt;text x='50' y='68' font-family='Arial' font-size='48' font-weight='bold' fill='white' text-anchor='middle'&gt;LC&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;1,600&amp;display=swap" rel="stylesheet"/>
 <style>
   :root {
     --red: #E23744;
@@ -212,7 +210,7 @@
   .footer { padding: 48px 40px; background: var(--off-white); border-top: 1px solid var(--gray-100); display: flex; justify-content: space-between; align-items: center; }
   .footer-logo { font-weight: 800; font-size: 20px; color: var(--gray-900); }
   .footer-logo span { color: var(--red); }
-  .footer-links { display: flex; gap: 28px; }
+  .footer-links { display: flex; gap: 12px 22px; flex-wrap: wrap; justify-content: center; }
   .footer-links a { font-size: 14px; color: var(--gray-400); text-decoration: none; font-weight: 500; }
   .footer-links a:hover { color: var(--gray-900); }
   .footer-copy { font-size: 13px; color: var(--gray-300); }
@@ -255,197 +253,182 @@
     .footer { flex-direction: column; gap: 20px; text-align: center; }
     .d-vis { height: 160px; }
   }
+
+.nav-links a { white-space: nowrap; }
 </style>
 </head>
 <body>
-
 <nav class="nav" id="nav">
-  <a href="#" class="nav-logo">Last<span>Call</span></a>
-  <div class="nav-links">
-    <a href="#how">How it works</a>
-    <a href="#deals">Deals</a>
-    <a href="#restaurants">For Restaurants</a>
-    <a href="#faq">FAQ</a>
-    <a href="#waitlist" class="nav-cta">Join Waitlist</a>
-  </div>
-</nav>
-
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-glow1"></div>
-  <div class="hero-glow2"></div>
-  <div class="hero-inner">
-    <div>
-      <div class="hero-badge"><span class="pulse-dot"></span> Launching in Calicut</div>
-      <h1>Restaurant food.<br><span class="accent">Half the price.</span><br>Zero waste.</h1>
-      <p class="hero-desc">Restaurants have perfectly good surplus food they can't sell. You want a great meal without the full price tag. LastCall connects both — pickup near you, every day.</p>
-      <div class="wl-form" id="hero-form">
-        <input type="email" class="wl-input" placeholder="Enter your email" id="hero-email">
-        <button class="wl-btn" onclick="joinWL('hero')">Join Waitlist →</button>
-      </div>
-      <div class="success-msg" id="hero-ok">✓ You're on the list! We'll notify you when LastCall launches in Calicut.</div>
-      <div class="wl-proof">
-        <div class="av-stack"><div class="av av1">A</div><div class="av av2">R</div><div class="av av3">S</div><div class="av av4">K</div></div>
-        <span class="wl-count"><strong id="cnt">312</strong> people already on the waitlist</span>
-      </div>
-    </div>
-    <div class="hero-phone">
-      <div class="phone">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <div class="ph-header">
-            <div class="ph-header-top"><h3>LastCall</h3><span class="ph-loc">📍 SM Street, Calicut</span></div>
-            <h2>Available Now</h2>
-            <p>4 deals near you</p>
-          </div>
-          <div class="ph-deals">
-            <div class="ph-deal">
-              <div class="ph-deal-img" style="background:linear-gradient(135deg,#FFF3E0,#FFE0B2)">🍗</div>
-              <div class="ph-deal-info"><div class="ph-deal-name">Chicken Biriyani</div><div class="ph-deal-rest">Bombay Restaurant · 0.5 km</div><div class="ph-prices"><span class="ph-old">₹280</span><span class="ph-new">₹140</span></div></div>
-              <span class="ph-tag t-hot">50% OFF</span>
-            </div>
-            <div class="ph-deal">
-              <div class="ph-deal-img" style="background:linear-gradient(135deg,#E8F5E9,#C8E6C9)">🥘</div>
-              <div class="ph-deal-info"><div class="ph-deal-name">Meals / Thali</div><div class="ph-deal-rest">Salkara Restaurant · 0.8 km</div><div class="ph-prices"><span class="ph-old">₹180</span><span class="ph-new">₹90</span></div></div>
-              <span class="ph-tag t-save">SAVE ₹90</span>
-            </div>
-            <div class="ph-deal">
-              <div class="ph-deal-img" style="background:linear-gradient(135deg,#FFEBEE,#FFCDD2)">🍜</div>
-              <div class="ph-deal-info"><div class="ph-deal-name">Mandi Chicken</div><div class="ph-deal-rest">Aliyas Mandhi · 1.2 km</div><div class="ph-prices"><span class="ph-old">₹320</span><span class="ph-new">₹160</span></div></div>
-              <span class="ph-tag t-few">3 LEFT</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="how-sec" id="how">
-  <div class="sec-inner">
-    <div class="sec-label reveal">How It Works</div>
-    <h2 class="sec-heading reveal">Great food, four steps.</h2>
-    <p class="sec-desc reveal">No delivery charges. No surge pricing. Just real food from real restaurants near you, at prices that make sense.</p>
-    <div class="steps">
-      <div class="step reveal"><div class="step-num">1</div><h3>Browse Deals</h3><p>Open the app and see what's available near you. Fresh surplus listings from restaurants in your area.</p></div>
-      <div class="step reveal"><div class="step-num">2</div><h3>Reserve Your Meal</h3><p>Found something you love? Tap reserve. It's held for you — no one else can grab it.</p></div>
-      <div class="step reveal"><div class="step-num">3</div><h3>Pick It Up</h3><p>Head to the restaurant, show your code, and collect your food. Pay at the counter — cash or UPI.</p></div>
-      <div class="step reveal"><div class="step-num">4</div><h3>Enjoy & Save</h3><p>Same restaurant. Same food. 30–50% less. Plus you just saved a meal from being wasted.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="stats-sec">
-  <div class="sec-inner">
-    <div class="stats-grid">
-      <div class="stat-item reveal"><div class="stat-val grad">63%</div><div class="stat-lbl">Of restaurants throw food away daily</div></div>
-      <div class="stat-item reveal"><div class="stat-val wht">₹65 Lac+</div><div class="stat-lbl">Worth of food wasted daily in Calicut</div></div>
-      <div class="stat-item reveal"><div class="stat-val grad">30–50%</div><div class="stat-lbl">Savings on every meal through LastCall</div></div>
-      <div class="stat-item reveal"><div class="stat-val wht">₹0</div><div class="stat-lbl">Delivery fees. Always.</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="deals-sec" id="deals">
-  <div class="sec-inner">
-    <div class="sec-label reveal">What You'll Find</div>
-    <h2 class="sec-heading reveal">Real food. Real savings.</h2>
-    <p class="sec-desc reveal">Here's what a typical day on LastCall looks like. Every deal is from a restaurant near you.</p>
-    <div class="deals-grid">
-      <div class="d-card reveal">
-        <div class="d-vis warm">🍗<div class="d-badge">SAVE 50%</div></div>
-        <div class="d-info"><div class="d-rest">Bombay Restaurant</div><div class="d-name">Chicken Biriyani (Full)</div><div class="d-pricing"><span class="d-new">₹140</span><span class="d-old">₹280</span></div><div class="d-meta"><span class="d-dist">📍 0.5 km · SM Street</span><span class="d-avail avl">Only 4 left</span></div></div>
-      </div>
-      <div class="d-card reveal">
-        <div class="d-vis cool">🥘<div class="d-badge">SAVE 40%</div></div>
-        <div class="d-info"><div class="d-rest">Salkara Restaurant</div><div class="d-name">Special Meals + Dessert</div><div class="d-pricing"><span class="d-new">₹90</span><span class="d-old">₹180</span></div><div class="d-meta"><span class="d-dist">📍 0.8 km · Mananchira</span><span class="d-avail ava">6 left</span></div></div>
-      </div>
-      <div class="d-card reveal">
-        <div class="d-vis spicy">🍜<div class="d-badge">SAVE 50%</div></div>
-        <div class="d-info"><div class="d-rest">Aliyas Mandhi</div><div class="d-name">Mandi Chicken + Salad</div><div class="d-pricing"><span class="d-new">₹160</span><span class="d-old">₹320</span></div><div class="d-meta"><span class="d-dist">📍 1.5 km · Beach Road</span><span class="d-avail avl">2 left</span></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="rest-sec" id="restaurants">
-  <div class="sec-inner">
-    <div class="rest-grid">
-      <div class="rest-content reveal">
-        <div class="sec-label">For Restaurant Partners</div>
-        <h2 class="sec-heading">Stop throwing money away.</h2>
-        <p class="sec-desc" style="margin-bottom: 0;">Every unsold meal is money in the bin. LastCall turns your surplus into revenue — with zero effort.</p>
-        <div class="benefits">
-          <div class="ben"><div class="ben-icon r">💰</div><div><h4>Recover lost revenue</h4><p>Sell surplus at a discount instead of discarding it. Earning ₹140 beats earning ₹0.</p></div></div>
-          <div class="ben"><div class="ben-icon g">📱</div><div><h4>List in under 30 seconds</h4><p>Quick photo, set a price, publish. Surplus is live and discoverable by nearby customers instantly.</p></div></div>
-          <div class="ben"><div class="ben-icon a">👥</div><div><h4>New customers walk in</h4><p>People who discover you through LastCall become regulars. Marketing that pays for itself.</p></div></div>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="dash">
-          <div class="dash-top"><div class="dd r"></div><div class="dd y"></div><div class="dd g"></div><div class="dash-url">partner.lastcall.co.in</div></div>
-          <div class="dash-body">
-            <div class="dash-greet">Welcome back 👋</div>
-            <div class="dash-title">Bombay Restaurant — Dashboard</div>
-            <div class="dash-stats">
-              <div class="ds"><div class="ds-val">12</div><div class="ds-lbl">Items Sold</div></div>
-              <div class="ds"><div class="ds-val red">₹1,680</div><div class="ds-lbl">Recovered</div></div>
-              <div class="ds"><div class="ds-val green">4.8 ★</div><div class="ds-lbl">Rating</div></div>
-            </div>
-            <button class="dash-btn">+ Add Surplus Item</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-sec" id="waitlist">
-  <div class="cta-inner">
-    <h2>Don't pay full price<br>for <span class="accent">tonight's dinner.</span></h2>
-    <p>Join the waitlist and be first to access restaurant deals at 30–50% off when we launch in Calicut.</p>
-    <div class="cta-form" id="cta-wrap">
-      <input type="email" class="cta-input" placeholder="Your email address" id="cta-email">
-      <button class="cta-btn" onclick="joinWL('cta')">Get Early Access</button>
-    </div>
-    <div class="success-msg" id="cta-ok" style="justify-content:center;max-width:480px;margin:0 auto">✓ You're in! We'll let you know when LastCall goes live in Calicut.</div>
-    <p class="cta-note">Free to join · No spam · Launching in SM Street, Mananchira & Beach Road</p>
-  </div>
-</section>
-
-<section class="faq-sec" id="faq">
-  <div class="sec-inner">
-    <div class="sec-label reveal">FAQ</div>
-    <h2 class="sec-heading reveal">Questions? Answered.</h2>
-    <div class="faq-grid">
-      <div class="faq-item reveal"><div class="faq-q">Is the food fresh?</div><div class="faq-a">Yes. Same food the restaurant prepared for regular customers — it just wasn't sold before end of service. Every item is prepared the same day.</div></div>
-      <div class="faq-item reveal"><div class="faq-q">How do I pay?</div><div class="faq-a">Pay directly at the restaurant when you pick up. Cash or UPI — whatever works for you.</div></div>
-      <div class="faq-item reveal"><div class="faq-q">Is there delivery?</div><div class="faq-a">LastCall is pickup only. That's how we keep prices low — no delivery markup, no platform fees eating into your savings.</div></div>
-      <div class="faq-item reveal"><div class="faq-q">Which areas are covered?</div><div class="faq-a">Launching in SM Street, Mananchira, Beach Road, and Palayam first. More areas expanding based on demand.</div></div>
-      <div class="faq-item reveal"><div class="faq-q">Is it free for customers?</div><div class="faq-a">Completely free. No subscription, no hidden fees. You pay only for the food you pick up.</div></div>
-      <div class="faq-item reveal"><div class="faq-q">How is this different from Swiggy/Zomato?</div><div class="faq-a">They deliver full-price food. We help you pick up surplus food at deep discounts. Different use case, better prices.</div></div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-logo">Last<span>Call</span></div>
-  <div class="footer-links">
-    <a href="https://instagram.com/lastcall.calicut" target="_blank">Instagram</a>
-    <a href="#waitlist">Join Waitlist</a>
-    <a href="mailto:hello.lastcall@gmail.com">Contact</a>
-    <a href="/restaurant-privacy">Restaurant Privacy</a>
-    <a href="/customer-privacy">Customer Privacy</a>
-  </div>
-  <div class="footer-copy">© 2026 LastCall. Calicut (Kozhikode), Kerala.</div>
-</footer>
-
-<div class="float-bar" id="fb" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">
-  <span class="fb-dot"></span>
-  <span><strong id="fc">312</strong> people on the waitlist</span>
-  <span style="color:var(--red);font-weight:700">Join →</span>
+<a class="nav-logo" href="#">Last<span>Call</span></a>
+<div class="nav-links">
+<a href="#how">How it works</a>
+<a href="#deals">Deals</a>
+<a href="#restaurants">For Restaurants</a>
+<a href="#faq">FAQ</a>
+<a class="nav-cta" href="#waitlist">Join Waitlist</a>
 </div>
-
+</nav>
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-glow1"></div>
+<div class="hero-glow2"></div>
+<div class="hero-inner">
+<div>
+<div class="hero-badge"><span class="pulse-dot"></span> Launching in Calicut</div>
+<h1>Restaurant food.<br/><span class="accent">Half the price.</span><br/>Zero waste.</h1>
+<p class="hero-desc">Restaurants have perfectly good surplus food they can't sell. You want a great meal without the full price tag. LastCall connects both — pickup near you, every day.</p>
+<div class="wl-form" id="hero-form">
+<input class="wl-input" id="hero-email" placeholder="Enter your email" type="email"/>
+<button class="wl-btn" onclick="joinWL('hero')">Join Waitlist →</button>
+</div>
+<div class="success-msg" id="hero-ok">✓ You're on the list! We'll notify you when LastCall launches in Calicut.</div>
+<div class="wl-proof">
+<div class="av-stack"><div class="av av1">A</div><div class="av av2">R</div><div class="av av3">S</div><div class="av av4">K</div></div>
+<span class="wl-count"><strong id="cnt">312</strong> people already on the waitlist</span>
+</div>
+</div>
+<div class="hero-phone">
+<div class="phone">
+<div class="phone-notch"></div>
+<div class="phone-screen">
+<div class="ph-header">
+<div class="ph-header-top"><h3>LastCall</h3><span class="ph-loc">📍 SM Street, Calicut</span></div>
+<h2>Available Now</h2>
+<p>4 deals near you</p>
+</div>
+<div class="ph-deals">
+<div class="ph-deal">
+<div class="ph-deal-img" style="background:linear-gradient(135deg,#FFF3E0,#FFE0B2)">🍗</div>
+<div class="ph-deal-info"><div class="ph-deal-name">Chicken Biriyani</div><div class="ph-deal-rest">Bombay Restaurant · 0.5 km</div><div class="ph-prices"><span class="ph-old">₹280</span><span class="ph-new">₹140</span></div></div>
+<span class="ph-tag t-hot">50% OFF</span>
+</div>
+<div class="ph-deal">
+<div class="ph-deal-img" style="background:linear-gradient(135deg,#E8F5E9,#C8E6C9)">🥘</div>
+<div class="ph-deal-info"><div class="ph-deal-name">Meals / Thali</div><div class="ph-deal-rest">Salkara Restaurant · 0.8 km</div><div class="ph-prices"><span class="ph-old">₹180</span><span class="ph-new">₹90</span></div></div>
+<span class="ph-tag t-save">SAVE ₹90</span>
+</div>
+<div class="ph-deal">
+<div class="ph-deal-img" style="background:linear-gradient(135deg,#FFEBEE,#FFCDD2)">🍜</div>
+<div class="ph-deal-info"><div class="ph-deal-name">Mandi Chicken</div><div class="ph-deal-rest">Aliyas Mandhi · 1.2 km</div><div class="ph-prices"><span class="ph-old">₹320</span><span class="ph-new">₹160</span></div></div>
+<span class="ph-tag t-few">3 LEFT</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="how-sec" id="how">
+<div class="sec-inner">
+<div class="sec-label reveal">How It Works</div>
+<h2 class="sec-heading reveal">Great food, four steps.</h2>
+<p class="sec-desc reveal">No delivery charges. No surge pricing. Just real food from real restaurants near you, at prices that make sense.</p>
+<div class="steps">
+<div class="step reveal"><div class="step-num">1</div><h3>Browse Deals</h3><p>Open the app and see what's available near you. Fresh surplus listings from restaurants in your area.</p></div>
+<div class="step reveal"><div class="step-num">2</div><h3>Reserve Your Meal</h3><p>Found something you love? Tap reserve. It's held for you — no one else can grab it.</p></div>
+<div class="step reveal"><div class="step-num">3</div><h3>Pick It Up</h3><p>Head to the restaurant, show your code, and collect your food. Pay at the counter — cash or UPI.</p></div>
+<div class="step reveal"><div class="step-num">4</div><h3>Enjoy &amp; Save</h3><p>Same restaurant. Same food. 30–50% less. Plus you just saved a meal from being wasted.</p></div>
+</div>
+</div>
+</section>
+<section class="stats-sec">
+<div class="sec-inner">
+<div class="stats-grid">
+<div class="stat-item reveal"><div class="stat-val grad">63%</div><div class="stat-lbl">Of restaurants throw food away daily</div></div>
+<div class="stat-item reveal"><div class="stat-val wht">₹65 Lac+</div><div class="stat-lbl">Worth of food wasted daily in Calicut</div></div>
+<div class="stat-item reveal"><div class="stat-val grad">30–50%</div><div class="stat-lbl">Savings on every meal through LastCall</div></div>
+<div class="stat-item reveal"><div class="stat-val wht">₹0</div><div class="stat-lbl">Delivery fees. Always.</div></div>
+</div>
+</div>
+</section>
+<section class="deals-sec" id="deals">
+<div class="sec-inner">
+<div class="sec-label reveal">What You'll Find</div>
+<h2 class="sec-heading reveal">Real food. Real savings.</h2>
+<p class="sec-desc reveal">Here's what a typical day on LastCall looks like. Every deal is from a restaurant near you.</p>
+<div class="deals-grid">
+<div class="d-card reveal">
+<div class="d-vis warm">🍗<div class="d-badge">SAVE 50%</div></div>
+<div class="d-info"><div class="d-rest">Bombay Restaurant</div><div class="d-name">Chicken Biriyani (Full)</div><div class="d-pricing"><span class="d-new">₹140</span><span class="d-old">₹280</span></div><div class="d-meta"><span class="d-dist">📍 0.5 km · SM Street</span><span class="d-avail avl">Only 4 left</span></div></div>
+</div>
+<div class="d-card reveal">
+<div class="d-vis cool">🥘<div class="d-badge">SAVE 40%</div></div>
+<div class="d-info"><div class="d-rest">Salkara Restaurant</div><div class="d-name">Special Meals + Dessert</div><div class="d-pricing"><span class="d-new">₹90</span><span class="d-old">₹180</span></div><div class="d-meta"><span class="d-dist">📍 0.8 km · Mananchira</span><span class="d-avail ava">6 left</span></div></div>
+</div>
+<div class="d-card reveal">
+<div class="d-vis spicy">🍜<div class="d-badge">SAVE 50%</div></div>
+<div class="d-info"><div class="d-rest">Aliyas Mandhi</div><div class="d-name">Mandi Chicken + Salad</div><div class="d-pricing"><span class="d-new">₹160</span><span class="d-old">₹320</span></div><div class="d-meta"><span class="d-dist">📍 1.5 km · Beach Road</span><span class="d-avail avl">2 left</span></div></div>
+</div>
+</div>
+</div>
+</section>
+<section class="rest-sec" id="restaurants">
+<div class="sec-inner">
+<div class="rest-grid">
+<div class="rest-content reveal">
+<div class="sec-label">For Restaurant Partners</div>
+<h2 class="sec-heading">Stop throwing money away.</h2>
+<p class="sec-desc" style="margin-bottom: 0;">Every unsold meal is money in the bin. LastCall turns your surplus into revenue — with zero effort.</p>
+<div class="benefits">
+<div class="ben"><div class="ben-icon r">💰</div><div><h4>Recover lost revenue</h4><p>Sell surplus at a discount instead of discarding it. Earning ₹140 beats earning ₹0.</p></div></div>
+<div class="ben"><div class="ben-icon g">📱</div><div><h4>List in under 30 seconds</h4><p>Quick photo, set a price, publish. Surplus is live and discoverable by nearby customers instantly.</p></div></div>
+<div class="ben"><div class="ben-icon a">👥</div><div><h4>New customers walk in</h4><p>People who discover you through LastCall become regulars. Marketing that pays for itself.</p></div></div>
+</div>
+</div>
+<div class="reveal">
+<div class="dash">
+<div class="dash-top"><div class="dd r"></div><div class="dd y"></div><div class="dd g"></div><div class="dash-url">partner.lastcall.co.in</div></div>
+<div class="dash-body">
+<div class="dash-greet">Welcome back 👋</div>
+<div class="dash-title">Bombay Restaurant — Dashboard</div>
+<div class="dash-stats">
+<div class="ds"><div class="ds-val">12</div><div class="ds-lbl">Items Sold</div></div>
+<div class="ds"><div class="ds-val red">₹1,680</div><div class="ds-lbl">Recovered</div></div>
+<div class="ds"><div class="ds-val green">4.8 ★</div><div class="ds-lbl">Rating</div></div>
+</div>
+<button class="dash-btn">+ Add Surplus Item</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="cta-sec" id="waitlist">
+<div class="cta-inner">
+<h2>Don't pay full price<br/>for <span class="accent">tonight's dinner.</span></h2>
+<p>Join the waitlist and be first to access restaurant deals at 30–50% off when we launch in Calicut.</p>
+<div class="cta-form" id="cta-wrap">
+<input class="cta-input" id="cta-email" placeholder="Your email address" type="email"/>
+<button class="cta-btn" onclick="joinWL('cta')">Get Early Access</button>
+</div>
+<div class="success-msg" id="cta-ok" style="justify-content:center;max-width:480px;margin:0 auto">✓ You're in! We'll let you know when LastCall goes live in Calicut.</div>
+<p class="cta-note">Free to join · No spam · Launching in SM Street, Mananchira &amp; Beach Road</p>
+</div>
+</section>
+<section class="faq-sec" id="faq">
+<div class="sec-inner">
+<div class="sec-label reveal">FAQ</div>
+<h2 class="sec-heading reveal">Questions? Answered.</h2>
+<div class="faq-grid">
+<div class="faq-item reveal"><div class="faq-q">Is the food fresh?</div><div class="faq-a">Yes. Same food the restaurant prepared for regular customers — it just wasn't sold before end of service. Every item is prepared the same day.</div></div>
+<div class="faq-item reveal"><div class="faq-q">How do I pay?</div><div class="faq-a">Pay directly at the restaurant when you pick up. Cash or UPI — whatever works for you.</div></div>
+<div class="faq-item reveal"><div class="faq-q">Is there delivery?</div><div class="faq-a">LastCall is pickup only. That's how we keep prices low — no delivery markup, no platform fees eating into your savings.</div></div>
+<div class="faq-item reveal"><div class="faq-q">Which areas are covered?</div><div class="faq-a">Launching in SM Street, Mananchira, Beach Road, and Palayam first. More areas expanding based on demand.</div></div>
+<div class="faq-item reveal"><div class="faq-q">Is it free for customers?</div><div class="faq-a">Completely free. No subscription, no hidden fees. You pay only for the food you pick up.</div></div>
+<div class="faq-item reveal"><div class="faq-q">How is this different from Swiggy/Zomato?</div><div class="faq-a">They deliver full-price food. We help you pick up surplus food at deep discounts. Different use case, better prices.</div></div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-logo">Last<span>Call</span></div>
+<div class="footer-links"><a href="https://instagram.com/lastcall.calicut" rel="noopener noreferrer" target="_blank">Instagram</a><a href="#waitlist">Join Waitlist</a><a href="mailto:hello.lastcall@gmail.com">Contact</a><a href="/customer-privacy">Customer Privacy</a><a href="/customer-terms">Customer Terms</a><a href="/account-deletion">Account Deletion</a><a href="/restaurant-privacy">Restaurant Privacy</a><a href="/restaurant-terms">Restaurant Terms</a></div>
+<div class="footer-copy">© 2026 LastCall. Calicut (Kozhikode), Kerala.</div>
+</footer>
+<div class="float-bar" id="fb" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">
+<span class="fb-dot"></span>
+<span><strong id="fc">312</strong> people on the waitlist</span>
+<span style="color:var(--red);font-weight:700">Join →</span>
+</div>
 <script>
   // Scroll effects
   window.addEventListener('scroll', () => {
